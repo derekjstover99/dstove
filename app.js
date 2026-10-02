@@ -52,3 +52,6 @@ document.querySelector('#copy-request').addEventListener('click', async () => {
     copyStatus.textContent = 'Select and copy the highlighted details, then paste them into your email.';
   }
 });
+
+// Enable only after all handlers are attached; avoid native GET submission without JavaScript.
+form.hidden = false;
